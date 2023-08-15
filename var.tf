@@ -37,10 +37,9 @@ variable backend_instance_name {
 
 variable backend_ami {
   type        = string
-  default     = "ami-0715c1897453cabd1"
+  default     = "ami-026ebd4cfe2c043b2"
   description = "backend ami"
 }
-
 variable backend_instance_type {
   type        = string
   default     = "t2.micro"
@@ -57,4 +56,41 @@ variable team {
   type        = string
   default     = "alpha"
   description = "locals vars"
+}
+
+
+variable "aws_region" {
+    default = "us-east-1"
+    type = string
+    description = "Enter the region of the infrastructure"
+}
+
+variable "aws_profile" {
+    default = "default"
+    type = string
+    description = "aws account profile"
+}
+
+variable "bucket_name" {
+    type = string
+    default = "may-assignement-bucket01"
+    description = "bucket name"
+}
+
+variable nexus_instance_name {
+  type        = string
+  default     = "nexus"
+  description = "nexus instance name"
+}
+
+variable nexus_ami {
+  type        = string
+  default     = "ami-053b0d53c279acc90"
+  description = "nexus instance ubuntu ami"
+}
+
+variable nexus_instance_type {
+  type        = string
+  default     = "t2.medium"
+  description = "nexus instance type"
 }
