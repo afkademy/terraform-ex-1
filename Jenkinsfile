@@ -1,4 +1,4 @@
-@Library("afkademy-sharedlib")
+@Library("afkademy-sharedlib") _
 
 pipeline{
     agent { label 'linux' }
